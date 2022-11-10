@@ -1,10 +1,14 @@
-import './App.css';
-
+import React from 'react';
+import Footer from './components/Footer';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
 function App() {
-  return (
-    <div className="App">
-
-    </div>
+  return ( 
+        <div>
+            <Navbar/>
+            <Hero/>
+            <Footer/>
+        </div>
   );
 }
 
