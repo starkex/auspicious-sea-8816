@@ -7,11 +7,12 @@ import {EmailIcon} from '@chakra-ui/icons';
 function Navbar() {
   return (
     <Flex>
-    <Box w={'90%'} m={'auto'} borderBottom={"1px"}  borderColor={"gray.200"} >
+    <Box w={'100%'} m={'auto'} borderBottom={"1px"}  borderColor={"gray.200"} >
     <Stack direction={['row']} p={4} gap={4} w={['100%', '100%', '90%']} position={'relative'} top={0} bg={'white'} m={'auto'} mb={2} zIndex={3}>
     
     <Grid w={'15%'} templateColumns={['repeat(1,1fr)']} alignItems={'center'} textAlign={'center'}>
-        <Image src={Logoimg} align={'center'} w={'100%'}></Image>
+        <Image src={Logoimg} align={'center'} w={'100%'}>
+        </Image>
     </Grid>
 
     <Grid w={'50%'} templateColumns={['repeat(11,1fr)']} alignItems={'center'} textAlign={'center'}>

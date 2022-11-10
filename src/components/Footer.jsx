@@ -11,7 +11,8 @@ import {
     Button
   } from '@chakra-ui/react';
 
-import {EmailIcon} from '@chakra-ui/icons'
+import {EmailIcon} from '@chakra-ui/icons';
+
 function Footer() {
   return (
     <Box
