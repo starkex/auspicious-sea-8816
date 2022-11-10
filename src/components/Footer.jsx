@@ -25,11 +25,9 @@ function Footer() {
             <Box>
                 StarkApps Logo
             </Box>
-            
             <Text fontSize={'sm'}>
                 © 2022 StarkApps. All rights reserved.
             </Text>
-
             <Stack direction={'row'} spacing={6}>
               <Link label={'Twitter'} href={'#'}>
                 <EmailIcon/>
@@ -92,4 +90,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default Footer;
