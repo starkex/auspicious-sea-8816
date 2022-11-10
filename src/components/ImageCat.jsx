@@ -32,18 +32,74 @@ function ImageCat() {
                     <Heading>Shop New Arrivals</Heading>
                 </Box>
             </Grid>
+
             <Grid w={'70%'} templateColumns={["repeat(1,1fr)","repeat(2,1fr)","repeat(4,20%)"]} gap={10}>
                 <Box w={'100%'}>
-                    <Button w={'90%'}>Shop Womens</Button>
+                    <Button 
+                    w={'90%'} 
+                    fontSize={'sm'} 
+                    borderRadius={0} 
+                    border={'1px solid black'} 
+                    bg={'white'} color={'black'} 
+                    _hover={
+                        { 
+                            bg:'gray.600',
+                            color:'white', 
+                            transition:'0.4s'
+                        }}>
+                            Shop Wome
+                    ns</Button>
                 </Box>
+                
                 <Box w={'100%'}>
-                    <Button w={'90%'}>Shop Mens</Button>
+                    <Button 
+                    w={'90%'} 
+                    fontSize={'sm'} 
+                    borderRadius={0} 
+                    border={'1px solid black'} 
+                    bg={'white'} color={'black'} 
+                    _hover={
+                        { 
+                            bg:'gray.600',
+                            color:'white', 
+                            transition:'0.4s'
+                        }}>
+                            Shop Mens
+                    </Button>
                 </Box>
+
                 <Box w={'100%'}>
-                    <Button w={'90%'}>Shop Girls</Button>
+                    <Button 
+                    w={'90%'} 
+                    fontSize={'sm'} 
+                    borderRadius={0} 
+                    border={'1px solid black'} 
+                    bg={'white'} color={'black'} 
+                    _hover={
+                        { 
+                            bg:'gray.600',
+                            color:'white', 
+                            transition:'0.4s'
+                        }}>
+                            Shop Girl
+                    s</Button>
                 </Box>
+
                 <Box w={'100%'}>
-                    <Button w={'90%'}>Shop Boys</Button>
+                    <Button 
+                    w={'90%'} 
+                    fontSize={'sm'} 
+                    borderRadius={0} 
+                    border={'1px solid black'} 
+                    bg={'white'} color={'black'} 
+                    _hover={
+                        { 
+                            bg:'gray.600',
+                            color:'white', 
+                            transition:'0.4s'
+                        }}>
+                            Shop Boys
+                    </Button>
                 </Box>
             </Grid>
         </HStack>
@@ -51,4 +107,4 @@ function ImageCat() {
   )
 }
 
-export default ImageCat
+export default ImageCat;
