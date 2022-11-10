@@ -29,7 +29,7 @@ function ImageCat() {
         <HStack w={['100%','80%','60%']} m={'auto'} mt={10} mb={10}>
             <Grid w={'35%'} templateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(1,1fr)"]}>
                 <Box w={'100%'} textAlign={'center'}>
-                    <Heading>Shop New Arrivals</Heading>
+                    <Heading fontFamily={'freight-big-pro,Times,serif'} fontWeight={400}>Shop New Arrivals</Heading>
                 </Box>
             </Grid>
 
@@ -47,10 +47,10 @@ function ImageCat() {
                             color:'white', 
                             transition:'0.4s'
                         }}>
-                            Shop Wome
-                    ns</Button>
+                            Shop Womens
+                    </Button>
                 </Box>
-                
+
                 <Box w={'100%'}>
                     <Button 
                     w={'90%'} 
@@ -81,8 +81,8 @@ function ImageCat() {
                             color:'white', 
                             transition:'0.4s'
                         }}>
-                            Shop Girl
-                    s</Button>
+                            Shop Girls
+                    </Button>
                 </Box>
 
                 <Box w={'100%'}>

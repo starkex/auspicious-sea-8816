@@ -1,10 +1,29 @@
 import React from 'react'
-import {Box, Image, Stack,Heading, Grid, Spacer, Input, Flex, Center} from '@chakra-ui/react';
-import { StackDivider } from '@chakra-ui/react';
+import {Box, Image, Stack,Heading, Grid, Spacer, Input, Flex, Center, VStack} from '@chakra-ui/react';
 import Logoimg from '../media/revisedLogo.png';
 import {EmailIcon} from '@chakra-ui/icons';
+import { useDisclosure } from '@chakra-ui/react';
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  FormControl,
+  FormLabel,
+  Button,
+  Text
+} from '@chakra-ui/react';
 
 function Navbar() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const initialRef = React.useRef(null);
+  const finalRef = React.useRef(null);
+  const handC = ()=>{
+
+  }
   return (
     <Flex>
     <Box w={'100%'} m={'auto'} borderBottom={"1px"}  borderColor={"gray.200"} >
@@ -49,7 +68,7 @@ function Navbar() {
 
     <Grid w={'20%'} templateColumns={['repeat(3,1fr)']} gap={4} alignItems={'center'} textAlign={'center'}>
         <Input placeholder={'Search'}></Input>
-        <Heading as='h6' size='xs'>
+        <Heading as='h6' size='xs' onClick={onOpen} _hover={{cursor:'Pointer'}}>
            Sign In
         </Heading>
        <Center>
@@ -59,7 +78,56 @@ function Navbar() {
     
 </Stack>
 </Box>
+
+      <Modal
+        initialFocusRef={initialRef}
+        finalFocusRef={finalRef}
+        isOpen={isOpen}
+        onClose={onClose}
+        isCentered
+        motionPreset='slideInBottom'
+      >
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader textAlign={'center'}>Sign In</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody pb={6}>
+            <FormControl>
+              <FormLabel>Email Address</FormLabel>
+              <Input ref={initialRef} placeholder='Email Address' />
+            </FormControl>
+
+            <FormControl mt={4}>
+              <FormLabel>Password</FormLabel>
+              <Input placeholder='Password'/>
+            </FormControl>
+           
+          </ModalBody>
+
+          <ModalFooter>
+            <VStack w={'100%'}>
+            <Button 
+            w={'100%'}
+            bg={'black'}
+            color={'white'}
+            fontSize={'md'}
+            onClick={()=>(handC)}
+            _hover={{color:'black', border:'1px solid black', bg:'white', transition:'0.4s'}}
+            >
+              Sign In Now
+            </Button>
+            {/* <Button w={'100%'} >Cancel</Button> */}
+            <Box mt={7} mb={5}>
+                <Text color={'gray.500'} fontSize={'xs'}>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</Text>
+            </Box>
+            </VStack>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+
 </Flex>
+
+
   )
 }
 
