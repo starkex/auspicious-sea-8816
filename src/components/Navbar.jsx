@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Box, Image, Stack,Heading, Grid, Spacer, Input, Flex, Center, VStack} from '@chakra-ui/react';
+import Data from '../db.json'; 
 import Logoimg from '../media/revisedLogo.png';
 import {EmailIcon} from '@chakra-ui/icons';
 import { useDisclosure } from '@chakra-ui/react';
@@ -17,15 +18,36 @@ import {
   Button,
   Text
 } from '@chakra-ui/react';
+
+import {
+  AlertDialog,
+  AlertDialogBody,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogContent,
+  AlertDialogOverlay,
+} from '@chakra-ui/react'
 import { Link } from 'react-router-dom';
 
 function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const initialRef = React.useRef(null);
   const finalRef = React.useRef(null);
-  const handC = ()=>{
 
+  const [username, setUsername] = useState('');
+  const [passw, setPassword] = useState('');
+  const cancelRef = React.useRef();
+
+  const [mlogin, setMlogin] = useState(false);
+
+  const handC = () =>{
+    console.log(username, passw,Data.admincreds[0].passw)
+    if(Data.admincreds[0].uname === username && Data.admincreds[0].passw === passw){
+      console.log('Sup boi welcome');
+      setMlogin(true); 
+    }
   }
+
   return (
     <Flex>
     <Box w={'100%'} m={'auto'} borderBottom={"1px"}  borderColor={"gray.200"} >
@@ -38,8 +60,9 @@ function Navbar() {
 
     <Grid w={'50%'} templateColumns={['repeat(11,1fr)']} alignItems={'center'} textAlign={'center'}>
         <Heading as='h2' size='xs'>
-            Gifts
+            <Link to='/adminpanel'> Gifts </Link>
         </Heading>
+
         <Heading as='h2' size='xs'>
             New
         </Heading>
@@ -83,7 +106,6 @@ function Navbar() {
     
 </Stack>
 </Box>
-
       <Modal
         initialFocusRef={initialRef}
         finalFocusRef={finalRef}
@@ -94,33 +116,47 @@ function Navbar() {
       >
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader textAlign={'center'}>Sign In</ModalHeader>
+          <ModalHeader textAlign={'center'} >Sign In</ModalHeader>
           <ModalCloseButton />
           <ModalBody pb={6}>
             <FormControl>
               <FormLabel>Email Address</FormLabel>
-              <Input ref={initialRef} placeholder='Email Address' />
+              <Input ref={initialRef} placeholder='Email Address' onChange={(e)=>{setUsername(e.target.value)}}/>
             </FormControl>
 
             <FormControl mt={4}>
               <FormLabel>Password</FormLabel>
-              <Input placeholder='Password'/>
+              <Input placeholder='Password' onChange={(e)=>{setPassword(e.target.value)}} />
             </FormControl>
            
           </ModalBody>
 
           <ModalFooter>
             <VStack w={'100%'}>
+              { mlogin ? <Button 
+            w={'100%'}
+            bg={'black'}
+            color={'white'}
+            fontSize={'md'}
+            onClick={handC}
+            _hover={{color:'black', border:'1px solid black', bg:'white', transition:'0.4s'}}
+            >
+
+             <Link to='/home'> Sign In Now </Link>
+            </Button> : 
+          
             <Button 
             w={'100%'}
             bg={'black'}
             color={'white'}
             fontSize={'md'}
-            onClick={()=>(handC)}
+            onClick={handC}
             _hover={{color:'black', border:'1px solid black', bg:'white', transition:'0.4s'}}
             >
               Sign In Now
             </Button>
+            }
+           
             {/* <Button w={'100%'} >Cancel</Button> */}
             <Box mt={7} mb={5}>
                 <Text color={'gray.500'} fontSize={'xs'}>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</Text>
@@ -129,11 +165,11 @@ function Navbar() {
           </ModalFooter>
         </ModalContent>
       </Modal>
-
+      
 </Flex>
 
-
   )
+  
 }
 
-export default Navbar
+export default Navbar;
