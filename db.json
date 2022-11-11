@@ -1,0 +1,26 @@
+{
+  "admincreds": [
+    {
+      "id": 1,
+      "uname":"admin",
+      "passw":"admin"
+    }
+  ],
+
+  "usercreds": [
+    {
+      "id": 1,
+      "uname":"billu",
+      "passw":"stark@123"
+    }
+  ],
+
+  "products":[
+    {
+      "image":"https://www.jcrew.com/s7-img-facade/BE996_YD2386?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+      "p_name":"Broken-in organic cotton oxford shirt",
+      "currency":"INR",
+      "p_price":"10,990"
+    }
+  ]
+}

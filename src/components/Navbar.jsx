@@ -3,6 +3,7 @@ import {Box, Image, Stack,Heading, Grid, Spacer, Input, Flex, Center, VStack} fr
 import Logoimg from '../media/revisedLogo.png';
 import {EmailIcon} from '@chakra-ui/icons';
 import { useDisclosure } from '@chakra-ui/react';
+import AllRoutes from '../Routes/AllRoutes';
 import {
   Modal,
   ModalOverlay,
@@ -16,6 +17,7 @@ import {
   Button,
   Text
 } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -45,7 +47,7 @@ function Navbar() {
            Womens
         </Heading>
         <Heading as='h4' size='xs'>
-           Mens
+          <Link to='/Mens'>Mens</Link>
         </Heading>
         <Heading as='h5' size='xs'>
            Kids
@@ -72,7 +74,10 @@ function Navbar() {
            Sign In
         </Heading>
        <Center>
-        <EmailIcon size={'xl'}/>
+        <Link to='/Cart'>
+            {/* <EmailIcon size={'xl'}/> */}
+            Cart
+        </Link>
         </Center>
     </Grid>
     
