@@ -1,13 +1,9 @@
 import React from 'react';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import Navbar from './components/Navbar';
+import AllRoutes from './Routes/AllRoutes';
 function App() {
   return ( 
         <div>
-            <Navbar/>
-            <Hero/>
-            <Footer/>
+            <AllRoutes/>
         </div>
   );
 }

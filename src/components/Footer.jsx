@@ -8,25 +8,27 @@ import {
     Text,
     Input,
     Heading,
-    Button
+    Button,
+    Image
   } from '@chakra-ui/react';
+  import Logoimg from '../media/revisedLogo.png';
+import {EmailIcon} from '@chakra-ui/icons';
 
-import {EmailIcon} from '@chakra-ui/icons'
 function Footer() {
   return (
     <Box
       bg={'gray.100'}
       color={['black']}>
-      <Container as={Stack} maxW={'90%'} py={12}>
+      <Container as={Stack} maxW={'80%'} py={12}>
         <SimpleGrid
           templateColumns={['repeat(1, 1fr)','repeat(4, 1fr)','repeat(5, 1fr)']}
           spacing={8}>
           <Stack spacing={6}>
             <Box>
-                StarkApps Logo
+            <Image src={Logoimg} align={'center'} w={'100%'}></Image>
             </Box>
             <Text fontSize={'sm'}>
-                © 2022 StarkApps. All rights reserved.
+                © 2022 StarkApps
             </Text>
             <Stack direction={'row'} spacing={6}>
               <Link label={'Twitter'} href={'#'}>
@@ -38,7 +40,22 @@ function Footer() {
               <Link label={'Instagram'} href={'#'}>
                 <EmailIcon/>
               </Link>
+              <Link label={'Twitter'} href={'#'}>
+                <EmailIcon/>
+              </Link>
+              <Link label={'YouTube'} href={'#'}>
+                <EmailIcon/>
+              </Link>
+              <Link label={'Instagram'} href={'#'}>
+                <EmailIcon/>
+              </Link>
             </Stack>
+            <Box>
+                <Text>India</Text>
+            </Box>
+            <Box>
+            <Image src={Logoimg} align={'center'} w={'100%'}></Image>
+            </Box>
           </Stack>
           <Stack align={'flex-start'}>
             <Heading size={'xs'}>Help</Heading>
