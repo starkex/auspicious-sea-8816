@@ -1,0 +1,82 @@
+{
+  "admincreds": [
+    {
+      "id": 1,
+      "uname": "admin",
+      "passw": "admin"
+    }
+  ],
+  "usercreds": [
+    {
+      "id": 1,
+      "uname": "billu",
+      "passw": "stark@123"
+    }
+  ],
+  "products": [
+    {
+      "id": "Math.random()",
+      "image": "https://www.jcrew.com/s7-img-facade/BE996_YD2386?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+      "p_name": "Broken-in organic cotton oxford shirt",
+      "currency": "INR",
+      "p_price": "10,990",
+      "size": "XL",
+      "category": "Best Seller"
+    },
+    {
+      "id": "Math.random()",
+      "image": "https://www.jcrew.com/s7-img-facade/BI893_HT1797?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+      "p_name": "Brushed wool V-neck cardigan sweater",
+      "currency": "INR",
+      "p_price": "20,212",
+      "size": "M",
+      "category": "Best Seller"
+    },
+    {
+      "id": "Math.random()",
+      "image": "https://www.jcrew.com/s7-img-facade/BB040_GR1461?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+      "p_name": "Eco Nordic shirt-jacket with PrimaLoft®",
+      "currency": "INR",
+      "p_price": "13,588",
+      "size": "X",
+      "category": "Best Seller"
+    },
+    {
+      "id": "Math.random()",
+      "image": "https://www.jcrew.com/s7-img-facade/AU670_BR6714?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+      "p_name": "Wallace & Barnes duck canvas utility chore jacket",
+      "currency": "INR",
+      "p_price": "24,309",
+      "size": "S",
+      "category": "Best Seller"
+    },
+    {
+      "id": "Math.random()",
+      "image": "https://www.jcrew.com/s7-img-facade/BE239_BK0001?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+      "p_name": "Classic piqué polo shirt",
+      "currency": "INR",
+      "p_price": "7,237",
+      "size": "S",
+      "category": "Best Seller"
+    },
+    {
+      "id": "Math.random()",
+      "image": "https://www.jcrew.com/s7-img-facade/BB121_WX6913?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+      "p_name": "Ludlow topcoat in wool-cashmere",
+      "currency": "INR",
+      "p_price": "68,009",
+      "size": "M",
+      "category": "Best Seller"
+    },
+    {
+      "id": "Math.random()",
+      "image": "https://www.jcrew.com/s7-img-facade/BE076_WZ1604?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+      "p_name": "Organic cotton chambray shirt in one-year wash",
+      "currency": "INR",
+      "p_price": "5,395",
+      "size": "XXL",
+      "category": "Best Seller"
+    }
+
+  ]
+}

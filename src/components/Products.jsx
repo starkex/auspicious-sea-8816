@@ -12,7 +12,7 @@ function Products() {
         getData().then((res)=>setData(res.data));
 
     },[])
-    console.log(data)
+    // console.log(data)
   return (
 
     <div>
@@ -21,11 +21,11 @@ function Products() {
                     <Heading fontFamily={'freight-big-pro,Times,serif'} fontWeight={400}>Shop All Men's Clothing</Heading>
                 </Box>
             </Grid>
-            <Box m={'auto'} w={'40%'}>
+            <Box m={'auto'} w={'40%'} marginBottom={'2%'}>
             <Grid w={['95%','100%','100%']} templateColumns={["repeat(4,1fr)","repeat(4,1fr)","repeat(8,1fr)"]} marginTop={'3%'} marginBottom={'2%'}>
                 <Box w={'100%'}>
                     <Button 
-                    // w={'90%'} 
+                    w={'90%'} 
                     fontSize={'sm'} 
                     borderRadius={0} 
                     border={'1px solid black'} 
@@ -42,7 +42,7 @@ function Products() {
 
                 <Box w={'100%'}>
                     <Button 
-                    // w={'90%'} 
+                    w={'90%'} 
                     fontSize={'sm'} 
                     borderRadius={0} 
                     border={'1px solid black'} 
@@ -59,7 +59,7 @@ function Products() {
 
                 <Box w={'100%'}>
                     <Button 
-                    // w={'90%'} 
+                    w={'90%'} 
                     fontSize={'sm'} 
                     borderRadius={0} 
                     border={'1px solid black'} 
@@ -76,7 +76,7 @@ function Products() {
 
                 <Box w={'100%'}>
                     <Button 
-                    // w={'90%'} 
+                    w={'90%'} 
                     fontSize={'sm'} 
                     borderRadius={0} 
                     border={'1px solid black'} 
@@ -92,7 +92,7 @@ function Products() {
                 </Box>
                 <Box w={'100%'}>
                     <Button 
-                    // w={'90%'} 
+                    w={'90%'} 
                     fontSize={'sm'} 
                     borderRadius={0} 
                     border={'1px solid black'} 
@@ -108,7 +108,7 @@ function Products() {
                 </Box>
                 <Box w={'100%'}>
                     <Button 
-                    // w={'90%'} 
+                    w={'90%'} 
                     fontSize={'sm'} 
                     borderRadius={0} 
                     border={'1px solid black'} 
@@ -124,7 +124,7 @@ function Products() {
                 </Box>
                 <Box w={'100%'}>
                     <Button 
-                    // w={'90%'} 
+                    w={'90%'} 
                     fontSize={'sm'} 
                     borderRadius={0} 
                     border={'1px solid black'} 
@@ -140,7 +140,7 @@ function Products() {
                 </Box>
                 <Box w={'100%'}>
                     <Button 
-                    // w={'90%'} 
+                    w={'90%'} 
                     fontSize={'sm'} 
                     borderRadius={0} 
                     border={'1px solid black'} 
@@ -156,10 +156,12 @@ function Products() {
                 </Box>
             </Grid>
             </Box>
-          <Box w={['90%','90%','60%']} m={'auto'}>
+
+
+          <Box w={['90%','90%','70%']} m={'auto'} marginBottom={'5%'}>
                 <Grid templateColumns={["repeat(1,1fr)","repeat(2,1fr)","repeat(3,1fr)"]} gap={5}>
                 {data.map((e)=>(
-                    <Box maxW='sm' borderWidth='1px' borderRadius='lg' >
+                    <Box maxW='sm' borderWidth='1px' borderRadius='lg' key={e.id} >
                         <Image src={e.image} alt={e.p_name} />
 
                         <Box p='6'>
@@ -173,10 +175,11 @@ function Products() {
                                 textTransform='uppercase'
                                 ml='2'
                             >
-                                Latest Collection
+                                {e.category}
                             </Box>
 
                         </Box>
+                        
                             <Box
                                 mt='1'
                                 fontWeight='semibold'

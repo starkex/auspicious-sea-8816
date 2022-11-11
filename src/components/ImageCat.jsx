@@ -8,19 +8,19 @@ function ImageCat() {
             
             <Grid templateColumns={["repeat(1,1fr)","repeat(2,1fr)","repeat(2,1fr)"]}>
                 <Box>
-                    <Image src={'https://i.pinimg.com/originals/c5/3c/ba/c53cbae483bcb21ffddfba259ff40a03.jpg'} w={'100%'}/>
+                    <Image src={'https://cdn.shopify.com/s/files/1/0432/6427/8679/t/10/assets/description_image_coloured_mineral_dye_denim_photos.jpg?v=1599781291'} w={'100%'}/>
                 </Box>
                 <Box>
-                    <Image src={'https://i.pinimg.com/originals/c5/3c/ba/c53cbae483bcb21ffddfba259ff40a03.jpg'} w={'100%'}/>
+                    <Image src={'https://www.orendtstudios.com/files/upload/portfolio/photo/photo-fashion-pr-produktionen-03.jpg'} w={'100%'}/>
                 </Box>
             </Grid>
 
-            <Grid templateColumns={["repeat(1,1fr)","repeat(2,1fr)","repeat(2,1fr)"]}>
+            <Grid templateColumns={["repeat(1,1fr)","repeat(2,1fr)","repeat(2,1fr)"]} marginTop={'-1%'}>
                 <Box>
-                    <Image src={'https://i.pinimg.com/originals/c5/3c/ba/c53cbae483bcb21ffddfba259ff40a03.jpg'} w={'100%'}/>
+                    <Image src={'https://www.orendtstudios.com/files/upload/portfolio/photo/photo-fashion-pr-produktionen-04.jpg'} w={'100%'}/>
                 </Box>
                 <Box>
-                    <Image src={'https://i.pinimg.com/originals/c5/3c/ba/c53cbae483bcb21ffddfba259ff40a03.jpg'} w={'100%'}/>
+                    <Image src={'https://pbs.twimg.com/media/FbFbFbxXkAEt1JZ.png'} w={'100%'}/>
                 </Box>
             </Grid>
 
