@@ -68,7 +68,7 @@ function Navbar() {
            Kids
         </Heading>
         <Heading as='h6' size='xs'>
-           Cashmere
+           <Link to='/Cashmere'>Cashmere</Link>
         </Heading>
         <Heading as='h4' size='xs'>
            Home

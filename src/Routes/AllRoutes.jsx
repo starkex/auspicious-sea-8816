@@ -7,12 +7,14 @@ import Mensshop from '../components/Mensshop';
 import PrivateRoutes from './PrivateRoutes';
 import Main from '../components/Main';
 import Womensshop from '../components/Womensshop';
+import Cashmere from '../components/Cashmere'
 
 function AllRoutes() {
   return (
     <Routes>
       <Route path='/Mens' element={<Mensshop/>}></Route>
       <Route path='/Womens' element={<Womensshop/>}></Route>
+      <Route path='/Cashmere' element={<Cashmere/>}></Route>
       <Route path='/' element={<Home/>}></Route>
       <Route path='/login' element={<Mensshop/>}></Route>
       <Route path='/adminpanel' element={<Admin/>}></Route>
