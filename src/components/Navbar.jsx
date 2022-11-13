@@ -59,7 +59,7 @@ function Navbar() {
             New
         </Heading>
         <Heading as='h3' size='xs'>
-           Womens
+        <Link to='/Womens'> Womens </Link>
         </Heading>
         <Heading as='h4' size='xs'>
           <Link to='/Mens'>Mens</Link>
