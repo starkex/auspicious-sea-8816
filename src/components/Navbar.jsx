@@ -91,8 +91,10 @@ function Navbar() {
         </Heading>
        <Center>
         <Link to='/Cart'>
-        <Heading as='h6' size='xs' onClick={onOpen} _hover={{cursor:'Pointer'}}>
-           New Register
+        <Heading as='h6' size='xs' _hover={{cursor:'Pointer'}}>
+          <Link to='/NewAccount'>
+              New Register
+           </Link>
         </Heading>
         </Link>
         </Center>

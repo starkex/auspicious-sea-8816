@@ -8,6 +8,7 @@ import PrivateRoutes from './PrivateRoutes';
 import Main from '../components/Main';
 import Womensshop from '../components/Womensshop';
 import Cashmere from '../components/Cashmere'
+import Newaccount from '../components/Newaccount';
 
 function AllRoutes() {
   return (
@@ -16,6 +17,7 @@ function AllRoutes() {
       <Route path='/Womens' element={<Womensshop/>}></Route>
       <Route path='/Cashmere' element={<Cashmere/>}></Route>
       <Route path='/' element={<Home/>}></Route>
+      <Route path='/NewAccount' element={<Newaccount/>}></Route>
       <Route path='/login' element={<Mensshop/>}></Route>
       <Route path='/adminpanel' element={<Admin/>}></Route>
       <Route path='/home' element={<Main/>}></Route>
