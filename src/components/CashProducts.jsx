@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { Grid, Stack, Box, Image,Badge, Button, Heading } from '@chakra-ui/react';
+import Topbanner from './Topbanner';
 
 
 function CashProducts() {
@@ -15,7 +16,7 @@ function CashProducts() {
   return (
 
     <div>
-            <Grid w={'100%'} templateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(1,1fr)"]} marginTop={'3%'} marginBottom={'2%'}>
+            {/* <Grid w={'100%'} templateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(1,1fr)"]} marginTop={'3%'} marginBottom={'2%'}>
                 <Box w={'100%'} textAlign={'center'}>
                     <Heading fontFamily={'freight-big-pro,Times,serif'} fontWeight={400}>Shop All Cashere Collection</Heading>
                 </Box>
@@ -154,8 +155,8 @@ function CashProducts() {
                     </Button>
                 </Box>
             </Grid>
-            </Box>
-
+            </Box> */}
+            <Topbanner/>
 
           <Box w={['90%','90%','70%']} m={'auto'} marginBottom={'5%'}>
                 <Grid templateColumns={["repeat(1,1fr)","repeat(2,1fr)","repeat(3,1fr)"]} gap={5}>
