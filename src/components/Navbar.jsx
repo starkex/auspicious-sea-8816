@@ -45,12 +45,12 @@ function Navbar() {
     <Box w={'100%'} m={'auto'} borderBottom={"1px"}  borderColor={"gray.200"} >
     <Stack direction={['row']} p={4} gap={4} w={['100%', '100%', '90%']} position={'relative'} top={0} bg={'white'} m={'auto'} mb={2} zIndex={3}>
     
-    <Grid w={['50%','20%','15%']} templateColumns={['repeat(1,1fr)']} alignItems={'center'} textAlign={'center'}>
+    <Grid w={['40%','30%','15%']} templateColumns={['repeat(1,1fr)']} alignItems={'center'} textAlign={'center'}>
         <Image src={Logoimg} align={'center'} w={'100%'}>
         </Image>
     </Grid>
 
-    <Grid w={'50%'} display={['none','grid','grid']} templateColumns={['repeat(11,1fr)']} alignItems={'center'} textAlign={'center'}>
+    <Grid w={'70%'} display={['none','none','grid']} templateColumns={['repeat(11,1fr)']} alignItems={'center'} textAlign={'center'}>
         <Heading as='h2' size='xs'>
             <Link to='/adminpanel'> Gifts </Link>
         </Heading>
@@ -83,7 +83,7 @@ function Navbar() {
 
     <Spacer/>
 
-    <Grid w={'20%'} templateColumns={['repeat(3,1fr)']} display={['none','grid','grid']} gap={4} alignItems={'center'} textAlign={'center'}>
+    <Grid w={'20%'} templateColumns={['repeat(3,1fr)']} display={['none','none','grid']} gap={4} alignItems={'center'} textAlign={'center'}>
         <Input placeholder={'Search'}></Input>
         <Heading as='h6' size='xs' onClick={onOpen} _hover={{cursor:'Pointer'}}>
            Sign In

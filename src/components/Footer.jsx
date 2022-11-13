@@ -21,7 +21,7 @@ function Footer() {
       color={['black']}>
       <Container as={Stack} maxW={'80%'} py={12}>
         <SimpleGrid
-          templateColumns={['repeat(1, 1fr)','repeat(4, 1fr)','repeat(5, 1fr)']}
+          templateColumns={['repeat(1, 1fr)','repeat(2, 1fr)','repeat(5, 1fr)']}
           spacing={8}>
           <Stack spacing={6}>
             <Box>
