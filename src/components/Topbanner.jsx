@@ -1,5 +1,5 @@
 import React from 'react'
-import {Grid, Box, Button, Heading} from '@chakra-ui/react';
+import {Grid, Box, Button, Heading, Stack, Image} from '@chakra-ui/react';
 
 
 function Topbanner() {
@@ -87,7 +87,7 @@ function Topbanner() {
                     borderRadius={0} 
                     border={'1px solid black'} 
                     bg={'white'} color={'black'} 
-                    _hover={
+                    _hover={ 
                         { 
                             bg:'black',
                             color:'white', 
@@ -100,6 +100,17 @@ function Topbanner() {
             </Grid>
             </Box>
             </Box>
+
+        <Stack w={['100%','80%','70%']} m={'auto'} mt={10} mb={'5%'}>
+            <Grid templateColumns={["repeat(1,1fr)","repeat(2,1fr)","repeat(2,1fr)"]}>
+                <Box>
+                    <Image src={'https://www.jcrew.com/brand_creative/2021/202112-Gift/cashmere/2021gift_1116_cashmere_b_img0.jpg'} w={'100%'}/>
+                </Box>
+                <Box>
+                    <Image src={'https://www.jcrew.com/brand_creative/2021/202112-Gift/cashmere/2021gift_1116_cashmere_b_img1.jpg'} w={'100%'}/>
+                </Box>
+            </Grid>
+        </Stack>
     </div>
   )
 }

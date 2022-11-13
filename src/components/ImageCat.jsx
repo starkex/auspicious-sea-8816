@@ -1,4 +1,4 @@
-import { Box,SimpleGrid, Flex, Grid, Stack, Image, HStack, Button, Heading, Spacer} from '@chakra-ui/react'
+import { Box, Grid, Stack, Image, HStack, Button, Heading} from '@chakra-ui/react'
 import React from 'react'
 
 function ImageCat() {
