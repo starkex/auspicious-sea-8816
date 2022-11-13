@@ -6,7 +6,7 @@ import { Grid, Stack, Box, Image,Badge, Button, Heading } from '@chakra-ui/react
 function Products() {
     const [data, setData] = useState([]);
     const getData=()=>{
-        return axios.get('http://localhost:3000/products');
+        return axios.get('http://localhost:8088/products');
     }
     useEffect(()=>{
         getData().then((res)=>setData(res.data));

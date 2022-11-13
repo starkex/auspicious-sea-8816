@@ -49,7 +49,7 @@ function Admin() {
     <div>
         <Navbar/>
 
-        <Flex
+      <Flex
       minH={'60vh'}
       align={'center'}
       justify={'center'}
