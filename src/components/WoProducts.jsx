@@ -3,10 +3,10 @@ import axios from 'axios';
 import { Grid, Stack, Box, Image,Badge, Button, Heading } from '@chakra-ui/react';
 
 
-function Products() {
+function WoProducts() {
     const [data, setData] = useState([]);
     const getData=()=>{
-        return axios.get('http://localhost:8088/products');
+        return axios.get('http://localhost:8088/woproducts');
     }
     useEffect(()=>{
         getData().then((res)=>setData(res.data));
@@ -18,7 +18,7 @@ function Products() {
     <div>
             <Grid w={'100%'} templateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(1,1fr)"]} marginTop={'3%'} marginBottom={'2%'}>
                 <Box w={'100%'} textAlign={'center'}>
-                    <Heading fontFamily={'freight-big-pro,Times,serif'} fontWeight={400}>Shop All Men's Clothing</Heading>
+                    <Heading fontFamily={'freight-big-pro,Times,serif'} fontWeight={400}>Shop All Women's Clothing</Heading>
                 </Box>
             </Grid>
             <Box m={'auto'} w={'40%'} marginBottom={'2%'}>
@@ -210,4 +210,4 @@ function Products() {
   )
 }
 
-export default Products
+export default WoProducts

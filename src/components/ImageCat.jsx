@@ -1,4 +1,4 @@
-import { Box,SimpleGrid, Flex, Grid, Stack, Image, HStack, Button, Heading, Spacer} from '@chakra-ui/react'
+import { Box, Grid, Stack, Image, HStack, Button, Heading} from '@chakra-ui/react'
 import React from 'react'
 
 function ImageCat() {
@@ -15,7 +15,7 @@ function ImageCat() {
                 </Box>
             </Grid>
 
-            <Grid templateColumns={["repeat(1,1fr)","repeat(2,1fr)","repeat(2,1fr)"]} marginTop={'-1%'}>
+            <Grid templateColumns={["repeat(1,1fr)","repeat(2,1fr)","repeat(2,1fr)"]} marginTop={'-2%'}>
                 <Box>
                     <Image src={'https://www.orendtstudios.com/files/upload/portfolio/photo/photo-fashion-pr-produktionen-04.jpg'} w={'100%'}/>
                 </Box>
