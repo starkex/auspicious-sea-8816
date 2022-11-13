@@ -1,13 +1,15 @@
-import React from 'react'
-import {Box, Image, Stack,Heading, Grid, Spacer, Input, Flex, Center} from '@chakra-ui/react';
-
+import React, { useState } from 'react'
+import {Box, Image, Stack,Heading, Grid, Spacer, Input, Flex, Center, Select} from '@chakra-ui/react';
 import Logoimg from '../media/revisedLogo.png';
-
-
 import { Link } from 'react-router-dom';
 
 function Navbar() {
-
+   const [val, setVal] =useState('');
+   const Valchange =()=>{
+      if(val=='Logout'){
+         
+      }
+   }
   return (
     <Flex>
     <Box w={'100%'} m={'auto'} borderBottom={"1px"}  borderColor={"gray.200"} >
@@ -20,7 +22,7 @@ function Navbar() {
 
     <Grid w={'50%'} templateColumns={['repeat(11,1fr)']} alignItems={'center'} textAlign={'center'}>
         <Heading as='h2' size='xs'>
-            <Link to='/adminpanel'> Gifts </Link>
+            <Link to='/'> Gifts </Link>
         </Heading>
 
         <Heading as='h2' size='xs'>
@@ -57,10 +59,23 @@ function Navbar() {
            Sign In
         </Heading> */}
        <Center>
-        <Link to='/Cart'>
-            {/* <EmailIcon size={'xl'}/> */}
-            Cart
-        </Link>
+       <Heading as='h6' size='xs' _hover={{cursor:'Pointer'}}>
+            <Link to='/adminpanel'>
+                  Admin
+           </Link>
+        </Heading>
+        {/* <Select placeholder='Account' border={0} _focus={{outline:'none'}} w={'70%'} onChange={(e)=>{setVal(e.target.value)}}>
+            <option value='option1'>Products</option>
+            <option value='option2'>Admin Profile</option>
+            <option value='option3'>
+
+            <Link href='/'> 
+              Logout
+              </Link>
+              </option>
+              
+         </Select> */}
+        
         </Center>
     </Grid>
     

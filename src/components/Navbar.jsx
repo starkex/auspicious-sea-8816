@@ -23,6 +23,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { iOpen, oOpen, oClose } = useDisclosure();
   const initialRef = React.useRef(null);
   const finalRef = React.useRef(null);
 
@@ -90,8 +91,9 @@ function Navbar() {
         </Heading>
        <Center>
         <Link to='/Cart'>
-            {/* <EmailIcon size={'xl'}/> */}
-            Cart
+        <Heading as='h6' size='xs' onClick={onOpen} _hover={{cursor:'Pointer'}}>
+           New Register
+        </Heading>
         </Link>
         </Center>
     </Grid>
@@ -157,6 +159,11 @@ function Navbar() {
           </ModalFooter>
         </ModalContent>
       </Modal>
+      
+
+
+      {/* New Modal for Registration */}
+
       
 </Flex>
 
