@@ -53,9 +53,9 @@ function Footer() {
             <Box>
                 <Text>India</Text>
             </Box>
-            <Box>
+            {/* <Box>
             <Image src={Logoimg} align={'center'} w={'100%'}></Image>
-            </Box>
+            </Box> */}
           </Stack>
           <Stack align={'flex-start'}>
             <Heading size={'xs'}>Help</Heading>
