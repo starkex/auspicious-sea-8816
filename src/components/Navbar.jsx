@@ -122,7 +122,7 @@ function Navbar() {
 
             <FormControl mt={4}>
               <FormLabel>Password</FormLabel>
-              <Input placeholder='Password' onChange={(e)=>{setPassword(e.target.value)}} />
+              <Input placeholder='Password' type='password' onChange={(e)=>{setPassword(e.target.value)}} />
             </FormControl>
            
           </ModalBody>
